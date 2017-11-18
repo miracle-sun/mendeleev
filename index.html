@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>grid test</title>
+		<style type="text/css">
+			body {
+				padding: 0;
+				margin: 0;
+				font-family: Arial;
+			}
+			.container {
+				display: grid;
+				grid-template-columns: repeat(12, 1fr);
+				grid-template-rows:  repeat(16, 40px);
+			}
+			.item {
+				border: 1px solid #000;
+				text-align: center;
+			}
+			.title-groups {
+				grid-column-start: 3;
+				grid-column-end: 13;
+			}
+			.title-column {
+				grid-row: 1/3;
+			}
+			.argentum {
+				grid-column: 11/13;
+				grid-row: 3/6;
+			}
+			.eight {
+				grid-column: 10/13;
+			}
+			.period-fourth {
+				grid-row: 6/8;
+			}
+			.period-fifth {
+				grid-row: 8/10;
+			}
+			.period-six {
+				grid-row: 10/12;
+			}
+			.empty {
+				grid-column: 11/13;
+			}
+			.red {
+				background: rgb(249, 149, 161);
+				text-align: left;
+				font-size: 24px;
+				padding: 5px 0 0 5px;
+			}
+			.yellow {
+				background: rgb(252, 242, 5);
+				text-align: left;
+				font-size: 24px;
+				padding: 5px 0 0 5px;
+			}
+			.blue {
+				background: rgb(165, 227, 248);
+				text-align: right;
+				font-size: 24px;
+				padding: 5px 5px 0 0;
+			}
+
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="item title-column">Периоды</div>
+			<div class="item title-column">Ряды</div>
+			<div class="item title-groups">Группы элементов</div>
+			<div class="item first">Ⅰ</div>
+			<div class="item">Ⅱ</div>
+			<div class="item">Ⅲ</div>
+			<div class="item">Ⅳ</div>
+			<div class="item">Ⅴ</div>
+			<div class="item">Ⅵ</div>
+			<div class="item">Ⅶ</div>
+			<div class="item eight">Ⅷ</div>
+			<div class="item argentum">Arg</div>
+			<div class="item period">1</div>
+			<div class="item ryad">1</div>
+			<div class="item red">H</div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item"></div>
+			<div class="item red">HE</div>
+			<div class="item">2</div>
+			<div class="item">2</div>
+			<div class="item red">Li</div>
+			<div class="item red">Be</div>
+			<div class="item yellow">B</div>
+			<div class="item yellow">C</div>
+			<div class="item yellow">N</div>
+			<div class="item yellow">O</div>
+			<div class="item yellow">F</div>
+			<div class="item yellow">Ne</div>
+			<div class="item">3</div>
+			<div class="item">3</div>
+			<div class="item red">Na</div>
+			<div class="item red">Mg</div>
+			<div class="item yellow">Al</div>
+			<div class="item yellow">Si</div>
+			<div class="item yellow">P</div>
+			<div class="item yellow">S</div>
+			<div class="item yellow">Cl</div>
+			<div class="item yellow">Ar</div>
+			<div class="item period-fourth">4</div>
+			<div class="item">4</div>
+			<div class="item red">K</div>
+			<div class="item red">Ca</div>
+			<div class="item blue">Sc</div>
+			<div class="item blue">Ti</div>
+			<div class="item blue">V</div>
+			<div class="item blue">Cr</div>
+			<div class="item blue">Mn</div>
+			<div class="item blue">Fe</div>
+			<div class="item blue">Co</div>
+			<div class="item blue">Ni</div>
+			<div class="item">5</div>
+			<div class="item red">Cu</div>
+			<div class="item red">Zn</div>
+			<div class="item yellow">Ga</div>
+			<div class="item yellow">Ge</div>
+			<div class="item yellow">As</div>
+			<div class="item yellow">Se</div>
+			<div class="item yellow">Br</div>
+			<div class="item yellow">Kr</div>
+			<div class="item empty"></div>
+			<div class="item period-fifth">5</div>
+			<div class="item">6</div>
+			<div class="item red">Rb</div>
+			<div class="item red">Sr</div>
+			<div class="item blue">Y</div>
+			<div class="item blue">Zr</div>
+			<div class="item blue">Nb</div>
+			<div class="item blue">Mo</div>
+			<div class="item blue">Tc</div>
+			<div class="item blue">Ru</div>
+			<div class="item blue">Rh</div>
+			<div class="item blue">Pd</div>
+			<div class="item">7</div>
+			<div class="item blue">Ag</div>
+			<div class="item blue">Cd</div>
+			<div class="item yellow">In</div>
+			<div class="item yellow">Sn</div>
+			<div class="item yellow">Sb</div>
+			<div class="item yellow">Te</div>
+			<div class="item yellow">I</div>
+			<div class="item yellow">Xe</div>
+			<div class="item empty"></div>
+			<div class="item period-six">6</div>
+			<div class="item">8</div>
+			<div class="item red">Cs</div>
+			<div class="item red">Ba</div>
+			<div class="item blue">La*</div>
+			<div class="item blue">Hf</div>
+			<div class="item blue">Ta</div>
+			<div class="item blue">W</div>
+			<div class="item blue">Re</div>
+			<div class="item blue">Os</div>
+			<div class="item blue">Ir</div>
+			<div class="item blue">Pt</div>
+			<div class="item">9</div>
+			<div class="item blue">Au</div>
+			<div class="item blue">Hg</div>
+			<div class="item yellow">Tl</div>
+			<div class="item yellow">Pb</div>
+			<div class="item yellow">Bi</div>
+			<div class="item yellow">Po</div>
+			<div class="item yellow">At</div>
+			<div class="item yellow">Rn</div>
+			<div class="item empty"></div>
+			<div class="item">7</div>
+			<div class="item">10</div>
+			<div class="item red">Fr</div>
+			<div class="item red">Ra</div>
+			<div class="item blue">Ac**</div>
+			<div class="item blue">Rf</div>
+			<div class="item blue">Db</div>
+			<div class="item blue">Sg</div>
+			<div class="item blue">Bh</div>
+			<div class="item blue">Hs</div>
+			<div class="item blue">Mt</div>
+			<div class="item blue">Ds</div>
+		</div>
+	</body>
+</html>
